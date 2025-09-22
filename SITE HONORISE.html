@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Honorise & Group • Marketing Digital de Alta Performance</title>
+  <meta name="description" content="Honorise & Group: estratégia, criatividade e performance para marcas ambiciosas. Gestão de redes, tráfego pago, branding e sites que convertem." />
+  <meta property="og:title" content="Honorise & Group • Marketing Digital de Alta Performance" />
+  <meta property="og:description" content="Estratégia, criatividade e performance. Cresça com a Honorise & Group." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/honorise-og.jpg" />
+  <meta name="theme-color" content="#0b0b0f" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:#0a0a0d;
+      --bg-2:#0f0f15;
+      --text:#e7e7ec;
+      --muted:#a5a8b3;
+      --purple-1:#9d4df1;
+      --purple-2:#6f2de1;
+      --accent:linear-gradient(135deg,var(--purple-1),var(--purple-2));
+      --radius:22px;
+      --shadow:0 10px 30px rgba(0,0,0,.45);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:radial-gradient(1200px 800px at 70% -10%, rgba(157,77,241,.15), transparent 60%),
+                 radial-gradient(900px 600px at 0% 110%, rgba(111,45,225,.18), transparent 60%),
+                 var(--bg);
+      color:var(--text);
+      font-family:"Outfit",system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      line-height:1.6
+    }
+
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1120px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:50;background:rgba(10,10,13,.7);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand .logo{
+      width:36px;
+      height:36px;
+      border-radius:10px;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:var(--shadow);
+      background:transparent;
+    }
+    .brand .logo img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      display:block;
+    }
+    .brand b{font-size:18px;letter-spacing:.5px;white-space:nowrap}
+    .nav a.btn{padding:10px 16px;border-radius:12px;background:var(--accent);font-weight:600;box-shadow:0 8px 24px rgba(111,45,225,.35)}
+
+    .hero{padding:96px 0 56px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+    .kicker{color:var(--muted);text-transform:uppercase;letter-spacing:.16em;font-size:12px}
+    h1{font-size:48px;line-height:1.1;margin:10px 0 16px}
+    .lead{font-size:18px;color:#cfd2dc;max-width:54ch}
+    .cta-row{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:14px;font-weight:700;border:1px solid rgba(255,255,255,.1)}
+    .btn.primary{background:var(--accent);border-color:transparent;box-shadow:0 14px 32px rgba(109,46,227,.35)}
+    .btn.secondary{background:#14141b}
+
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+    .hero-card h3{margin:0 0 8px;font-size:20px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:99px;font-size:12px;background:rgba(157,77,241,.15);border:1px solid rgba(157,77,241,.35)}
+
+    section{padding:76px 0}
+    h2{font-size:34px;margin:0 0 10px}
+    .sub{color:var(--muted);margin:0 0 30px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--bg-2);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+    .card h3{margin:10px 0 6px}
+    .card p{color:#cdd0dc}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    footer{border-top:1px solid rgba(255,255,255,.06);padding:28px 0;color:var(--muted)}
+    @media (max-width:980px){.hero-grid,.grid-2{grid-template-columns:1fr}}
+    @media (max-width:680px){h1{font-size:36px}.cards{grid-template-columns:1fr}}
+  </style>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Honorise & Group",
+    "url": "https://honorisegroup.com.br",
+    "logo": "https://honorisegroup.com.br/logo.png",
+    "sameAs": ["https://www.instagram.com/honorise.digital"],
+    "description": "Marketing digital de alta performance: branding, social, mídia e sites."
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="logo">
+          <img src="logo.png.png" alt="Honorise & Group">
+        </span>
+        <b>Honorise & Group</b>
+      </a>
+      <nav>
+        <a href="#servicos" class="btn secondary">Serviços</a>
+        <a href="#contato" class="btn primary">Falar no WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="kicker">Marketing digital • Branding • Performance</span>
+          <h1>Inovação que <span style="background:var(--accent);-webkit-background-clip:text;background-clip:text;color:transparent">gera resultados</span></h1>
+          <p class="lead">Estratégia, criatividade e mídia para levar a sua marca ao próximo nível. Social, tráfego pago, sites e conteúdo — com foco total em performance.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="https://wa.me/5541985030835?text=Olá,+vim+pela+Honorise+&+Group+e+quero+impulsionar+minha+marca!" target="_blank" rel="noopener">💬 Fale com a Honorise & Group</a>
+            <a class="btn secondary" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+        <aside>
+          <div class="hero-card">
+            <span class="pill">Destaques</span>
+            <h3>O que entregamos</h3>
+            <ul style="margin:10px 0 0;padding-left:18px;color:#cfd2dc">
+              <li>Calendário de conteúdo e gestão de redes</li>
+              <li>Campanhas em Meta Ads & Google Ads</li>
+              <li>Landing pages rápidas que convertem</li>
+              <li>Relatórios claros com métricas relevantes</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="container">
+        <h2>Serviços</h2>
+        <p class="sub">Pacotes sob medida para a fase do seu negócio — do posicionamento à aquisição.</p>
+        <div class="cards">
+          <div class="card"><span class="pill">Branding</span><h3>Identidade & Posicionamento</h3><p>Tom de voz, visual, diretrizes e storytelling. A base para uma presença memorável.</p></div>
+          <div class="card"><span class="pill">Social</span><h3>Gestão de Redes</h3><p>Planejamento, criação de posts/reels, community e relatórios mensais.</p></div>
+          <div class="card"><span class="pill">Performance</span><h3>Tráfego Pago</h3><p>Meta, Google & TikTok Ads focados em conversão e CAC eficiente.</p></div>
+          <div class="card"><span class="pill">Web</span><h3>Landing Pages</h3><p>Páginas rápidas, responsivas e integradas ao WhatsApp/CRM.</p></div>
+          <div class="card"><span class="pill">Conteúdo</span><h3>Copy & SEO</h3><p>Textos que posicionam e vendem: blog, e-mail, scripts e anúncios.</p></div>
+          <div class="card"><span class="pill">Analytics</span><h3>Medição & Insights</h3><p>Setup de pixels/tags e leitura de dados para decisões melhores.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+        <div>
+          <h2>Vamos impulsionar sua marca?</h2>
+          <p class="sub">Chame no WhatsApp ou envie um e-mail. Respondemos rápido.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="https://wa.me/5541985030835?text=Olá,+quero+impulsionar+minha+marca+com+a+Honorise&Group" target="_blank" rel="noopener">💬 WhatsApp</a>
+            <a class="btn secondary" href="mailto:honorisemarketing@gmail.com">✉️ honorisemarketing@gmail.com</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Informações rápidas</h3>
+          <p style="margin:6px 0 0;color:#cfd2dc">
+            CNPJ: 62.828.278/0001-09<br/>
+            Curitiba • PR • Brasil
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <small>© <span id="y"></span> Honorise & Group. Todos os direitos reservados.</small>
+      <small style="opacity:.8">H • Inovação que gera resultados.</small>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
